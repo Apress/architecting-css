@@ -1,0 +1,38 @@
+body {
+  padding: 2rem; }
+
+h1 {
+  margin: 0; }
+
+header {
+  background: white;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: solid 1px silver; }
+
+div {
+  background: white;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: 2px 2px 4px silver; }
+
+.message {
+  padding: 1rem; }
+
+.info {
+  background: #ccccff;
+  border: solid 1px blue; }
+
+.success {
+  background: #4dff4d;
+  border: solid 1px green; }
+
+.warning {
+  background: #ffedcc;
+  border: solid 1px orange; }
+
+.error {
+  background: #ffcccc;
+  border: solid 1px red; }

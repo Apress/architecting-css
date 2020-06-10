@@ -1,0 +1,47 @@
+p::first-letter {
+  color: red;
+  font-size: 3rem;
+  line-height: 0;
+  display: block;
+  float: left;
+  margin-top: .125rem;
+  margin-right: .5rem;
+}
+
+p::first-line {
+  color: red;
+}
+
+a {
+  display: block;
+}
+a::before {
+  content: url(link.png);
+  display: inline-block;
+  margin-right: .5rem;
+  vertical-align: middle;
+}
+a::after {
+  content: ' (link)'
+}
+
+input {
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: solid 1px gray;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  width: 100%;
+}
+input[type=text]::placeholder {
+  font-family: cursive;
+}
+
+::selection {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+::backdrop {
+  background: cornflowerblue;
+}

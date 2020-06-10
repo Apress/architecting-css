@@ -1,0 +1,37 @@
+html, body {
+  font-size: 24px;
+}
+
+.container { overflow:auto; }
+.container > div {
+  width: 50%; 
+  float: left;
+}
+.container p { 
+  background: rgba(0, 0, 0, .16); /* light grey */
+  text-align: center;
+}
+.container > div:last-of-type p { /* second rectangle */
+  background: rgba(0, 0, 0, .32); /* dark grey */
+}
+.has-margin > div {
+  border: dashed 1px rgba(0, 0, 0, .5);
+  margin: 10px;
+}
+
+.line {
+  position: absolute;
+  width: 4px;
+  left: calc(50% - 2px);
+  top: 0;
+  bottom: 0;
+  background: grey;
+  z-index: -1;
+}
+
+.label {
+  text-align: center;
+  margin-top: 36px;
+  background: white;
+  padding: 10px;
+}

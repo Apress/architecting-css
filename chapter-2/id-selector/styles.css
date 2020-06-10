@@ -1,0 +1,11 @@
+img {
+  width: 200px;
+}
+
+#ok {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+p#ok {
+  color: pink;
+}

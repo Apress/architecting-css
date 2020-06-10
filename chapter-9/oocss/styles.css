@@ -1,0 +1,32 @@
+.theme-light {
+  color: slategray;
+  background-color: lightgoldenrodyellow;
+  border: 1px solid navy;
+}
+.sidebar {
+  padding: 1rem;
+  float: left;
+  width: 200px;
+}
+.hero {
+  margin: 1rem 1rem 1rem 250px;
+  padding: 1rem;
+}
+
+/* -- Not This --
+
+.sidebar {
+  color: slategray;
+  background-color: lightgoldenrodyellow;
+  border: 1px solid navy;
+  padding: 1rem;
+  float: left;
+  width: 200px;
+}
+.hero {
+  color: slategray;
+  background-color: lightgoldenrodyellow;
+  border: 1px solid navy;
+  margin: 1rem 1rem 1rem 250px;
+  padding: 1rem;
+} */

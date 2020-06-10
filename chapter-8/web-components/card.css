@@ -1,0 +1,32 @@
+:host {
+  font-family: sans-serif;
+  --primary: mediumvioletred;
+  --background: white;
+  --text: #242529;
+  --buttonText: white;
+}
+:host(.dark) {
+  --background: #242529;
+  --text: white;
+}
+
+.card {
+  background: var(--background);
+  color: var(--text);
+  box-shadow: 1px 1px 1px var(--primary), 0px 0px 2px lightgrey;
+  padding: 1rem;
+}
+
+h2 { margin: 0 1rem 0 0; }
+
+.actions {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+button {
+  background: var(--primary);
+  color: var(--buttonText);
+  padding: .5rem 1.5rem;
+  border: none;
+}

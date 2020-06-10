@@ -1,0 +1,7 @@
+html, body {
+  font-size: 24px;
+}
+
+*:focus {
+  outline: 1px dotted grey;
+}

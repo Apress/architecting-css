@@ -1,0 +1,45 @@
+body {
+  color: gray;
+  padding: 2rem;
+  text-align: justify;
+  line-height: 1.5rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+}
+
+h1 {
+  color: slategray;
+  font-family: 'Comic Sans MS';
+  font-size: 2.5rem;
+  letter-spacing: .0625rem;
+}
+h1 {
+  font-family: fantasy;
+}
+
+p:first-of-type::first-letter {
+  color: gold;
+  display: block;
+  float: left;
+  font-size: 3rem;
+  line-height: 0;
+  margin: .5rem .5rem 0 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+tr {
+  color: slategray;
+  border-top: solid 1px lightsteelblue;
+  border-bottom: solid 1px lightsteelblue;
+}
+td {
+  padding: .5rem 1rem;
+}
+
+img {
+  margin: 0 0 0 1rem;
+  float: right;
+  width: 200px;
+}

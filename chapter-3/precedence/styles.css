@@ -1,0 +1,11 @@
+p {
+  color: black !important;
+}
+
+p {
+  animation: 3s linear 1s 1 alternate slidein;
+}
+@keyframes slidein {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}

@@ -1,0 +1,54 @@
+/*  THEME */
+
+body {
+  --border: solid 1px rgba(0, 0, 0, .2);
+  --dark: rgba(0, 0, 0, .87);
+  --light: rgba(255, 255, 255, .87);
+  --shadow: box-shadow: 5px 5px 5px var(--dark);
+  color: rgba(0, 0, 0, .87);
+  font-family: sans-serif;
+}
+
+h1 { font-family: cursive; }
+
+a {
+  font-size: .75rem;
+  font-variant: small-caps;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: var(--border);
+  border-radius: 45px;
+  box-shadow: var(--shadow);
+  box-sizing: border-box;
+  font-size: .75rem;
+  font-variant: small-caps;
+  padding: .5rem 1rem;
+}
+
+.actions {
+  align-items: center;
+  border-top: var(--border);
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+.actions > * { margin-left: 1rem;}
+
+.card { 
+  border: var(--border);
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+.card > div { padding: 1rem; }
+.card .header {
+  background: rgba(0, 0, 0, .87);
+  color: rgba(255, 255, 255, .87);
+}
+
+/*  Layout */
+.container {
+  column-width: 30rem;
+}

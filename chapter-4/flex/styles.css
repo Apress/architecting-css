@@ -1,0 +1,56 @@
+html, body {
+  padding: 12px 36px;
+  margin: 0;
+}
+
+h1 { text-align: center; }
+nav {
+  border-top: solid 1px gray;
+  border-bottom: solid 1px gray;
+}
+
+ul {
+  display: flex;
+  padding-left: 0;
+  justify-content: space-around;
+}
+
+.container { display: flex; }
+
+aside {
+  background: rgba(0, 0, 0, .16);
+  flex-basis: 30%;
+  flex-shrink: 0;
+  padding: 30px;
+}
+
+section {
+  background: rgba(0, 0, 0, .5);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+section div {
+  color: white;
+  background: rgba(0, 0, 0, .50);
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  width: 100px;
+}
+
+main {
+  background: rgba(0, 0, 0, .05);
+  padding: 30px;
+}
+
+li { list-style-type: none; }
+img {
+  width: 100%;
+  max-width: 250px;
+  float: left;
+  padding-right: 20px;
+}

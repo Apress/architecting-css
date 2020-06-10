@@ -1,0 +1,15 @@
+.l-leftnav #sidebar {  }
+.login input[type=password] {  }
+.l-stacked > * {  }
+.hero { height: 8rem; border: 2px solid green; }
+.hero-light { border-color: lightgreen; }
+
+/* Not this */
+/* #sidebar.sidebar-left {  }
+.login .password {  }
+.l-leftnav .nav li {  }
+.hero { height: 8rem; border: 2px solid green; }
+.hero.hero-light {
+  height: 8rem;
+  border: 2px solid lightgreen; 
+} */

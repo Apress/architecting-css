@@ -1,0 +1,6 @@
+body { background: black !important }
+
+*, p { 
+  animation: none !important;
+  color: white !important
+}

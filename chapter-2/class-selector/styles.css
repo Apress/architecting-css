@@ -1,0 +1,12 @@
+img {
+  width: 200px;
+}
+button {
+  background-color: lightblue;
+}
+button.outline {
+  border: 1px solid green;
+}
+button.outline.bold {
+  border: 5px solid darkgreen;
+}

@@ -1,0 +1,24 @@
+html, body {
+  padding: 36px;
+  margin: 0;
+}
+
+a {
+  align-items: center;
+  background: gray;
+  border: solid 1px white;
+  color: white;
+  display: flex;
+  font-size: 36px;
+  height: 100px;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 250ms ease-in-out;
+}
+
+a:hover {
+  background: white;
+  border-color: gray;
+  color: gray;
+  border-radius: 45px;
+}

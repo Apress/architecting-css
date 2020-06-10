@@ -1,0 +1,13 @@
+ul {
+  counter-reset: li;
+}
+li:before {
+  content: counter(li)"-" attr(category)": ";
+  counter-increment: li;
+  text-transform: capitalize;
+  background: lightblue;
+  display: inline-block;
+  padding: .5rem 1rem;
+  border-radius: 25px;
+  margin: 0 1rem 1rem 0;
+}

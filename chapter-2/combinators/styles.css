@@ -1,0 +1,20 @@
+nav a {
+  display: block;
+  margin: 0 1rem;
+}
+
+nav > ul > li {
+  border: solid 1px gray;
+  display: inline-block;
+  list-style-type: none;
+  vertical-align: top;
+}
+
+p ~ p {
+  color: purple;
+  font-weight: bold;
+}
+
+h2 + p {
+  font-family: sans-serif;
+}

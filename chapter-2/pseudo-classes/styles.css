@@ -1,0 +1,54 @@
+table {
+  border-collapse: collapse;
+  margin-bottom: 1rem;;
+  width: 100%;
+}
+tr {
+  border-top: solid 1px lightgrey;
+  border-bottom: solid 1px lightgrey;
+}
+tbody tr:nth-last-of-type(odd) {
+  background: lightblue;
+}
+th, td {
+  padding: .5rem 1rem;
+  text-align: left;
+}
+
+form {
+  margin-top: 2rem;
+}
+form > *:not(button) {
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+}
+label {
+  margin-bottom: .5rem;
+}
+input {
+  border: solid 1px lightblue;
+  padding: .5rem 1rem;
+  width: 100%;
+}
+input:hover, input:active {
+  border-color: slategray;
+}
+input:invalid {
+  border-left: solid 5px red;
+}
+input:valid {
+  border-left: solid 5px green;
+}
+
+button {
+  padding: .5rem 1.5rem;
+  border: solid 1px lightblue;
+  border-radius: 3px;
+  background: white;
+  margin-top: .5rem;
+}
+button:hover, button:active {
+  outline: dotted 1px blue;
+  outline-offset: 2px;
+}

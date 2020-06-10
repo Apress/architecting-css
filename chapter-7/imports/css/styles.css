@@ -1,0 +1,29 @@
+body {
+  padding: 2rem;
+}
+
+.message, .error-message, .warning-message, .success-message, .info-message {
+  padding: 1rem;
+}
+
+.info-message {
+  background: #ccccff;
+  border: solid 1px blue;
+}
+
+.success-message {
+  background: #4dff4d;
+  border: solid 1px green;
+}
+
+.warning-message {
+  background: #ffedcc;
+  border: solid 1px orange;
+}
+
+.error-message {
+  background: #ffcccc;
+  border: solid 1px red;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,23 @@
+html, body {
+  font-size: 24px;
+  padding: 36px;
+  margin: 0;
+}
+
+div {
+  background: rgba(0, 0, 0, .16);
+  height: 50px;
+  margin: 20px;
+  outline: dotted 1px gray;
+  outline-offset: 19px;
+  text-align: center;
+}
+
+div:first-of-type {
+  padding: 20px;
+}
+
+div:nth-of-type(2),
+div:last-of-type {
+  width: 200px;
+}

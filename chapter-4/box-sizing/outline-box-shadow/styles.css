@@ -1,0 +1,23 @@
+html, body {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+h1 { margin: 24px; }
+
+.container div {
+  background: rgba(0, 0, 0, .16); /* light grey */
+  height: 50px;
+}
+.container div:last-of-type {
+  background: rgba(0, 0, 0, .32); /* dark grey */
+}
+
+.container.outline div:last-of-type {
+  outline: dotted 15px rgba(0, 0, 0, .5);
+}
+
+.container.box-shadow div:last-of-type {
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, .5)
+}

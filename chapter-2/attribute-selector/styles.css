@@ -1,0 +1,43 @@
+label, input, a, button {
+  display: block;
+  margin-bottom: 1rem;
+}
+button {
+  display: flex;
+  align-items: center;
+}
+
+/* Matches password input fields */
+input[type="password"] {
+  color: red;
+}
+
+/* Strikes out any quotes cited from Wikipedia */
+blockquote[cite*="wikipedia.org"] {
+  text-decoration: line-through;
+}
+
+/* Underlines any element with a title attribute containing 
+   the word "continue" with any Capitalization.
+*/
+[title*="continue" i] {
+  text-decoration: underline;
+}
+
+/* Display a gray border around any input which has an    
+   accept starting with image, such as image/png
+*/
+input[accept^="image"] {
+  border: solid 4px gray;
+}
+
+/* Display a PDF icon beside any .pdf download links */
+a[href$=".pdf"]::before {
+  content: url(icon-pdf.png);
+}
+
+/* Matches a font-awesome icon such as fa-home */
+i[class|="material-icons"] {
+  color: blue;
+  width: 32px;
+}

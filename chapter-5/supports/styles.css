@@ -1,0 +1,21 @@
+html, body {
+  padding: 36px;
+  margin: 0;
+}
+
+.container {
+  background-image: url('art.png');
+  padding: 1rem;
+}
+p {
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  margin: 5rem;
+  padding: 1rem;
+}
+
+@supports not (backdrop-filter: blur(20px) ) {
+  p {
+    background-color:white;
+  }
+}

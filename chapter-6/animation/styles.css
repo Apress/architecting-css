@@ -1,0 +1,119 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 36px;
+  margin: 0;
+}
+
+body > div {
+  box-sizing: border-box;
+  margin-bottom: 3rem;
+}
+
+@keyframes myAnimation {
+  0% {
+    background: gray;
+    border-color: white;
+    color: white;
+    border-radius: 0px;
+    transform: scale(0);
+  }
+  25% {
+    transform: rotate(5deg) scale(.25);
+  }
+  50% {
+    transform: rotate(-10deg) scale(.5);
+  }
+  75% {
+    transform: rotate(35deg) scale(.75);
+  }
+  100% {
+    background: white;
+    border-color: gray;
+    color: gray;
+    border-radius: 45px;
+    transform: rotate(0) scale(1);
+  }
+}
+
+.animations {
+  animation: myAnimation 500ms ease-in-out 1;
+  background: white;
+  border: solid 1px gray;
+  border-radius: 45px;
+  box-sizing: border-box;
+  color: gray;
+  font-size: 2rem;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+button {
+  background: lightgrey;
+  line-height: 0;
+  padding: 1rem 2rem;
+  transition: all 250ms ease-in-out;
+}
+
+button:hover,
+button:focus {
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+@keyframes roll {
+  0%   { transform: translateX(-75vw) rotate(-360deg);  }
+  100% { transform: translate(0) rotate(0)}
+}
+
+@keyframes roll-reverse {
+  0% { transform: translate(0) rotate(0)}
+  100%   { transform: translateX(-75vw) rotate(-360deg);  }
+}
+
+.animation-container {
+  background: linear-gradient(lightgrey, grey);
+  border-radius: 50%;
+  display: none;
+  height: 100px;
+  margin: 1rem auto;
+  width: 100px;
+}
+
+.show {
+  display: block;
+  animation: roll 1s cubic-bezier(0.280, 0.840, 0.420, 1);
+}
+
+.close {
+  display: block;
+  animation: roll-reverse 1s cubic-bezier(0.280, 0.840, 0.420, 1);
+}
+
+
+@keyframes jumpStart {
+ 0% {
+    width: 0;
+    background-color: white; 
+    border: 1px solid gray; 
+ }
+ 100% {
+    width: 90vw; 
+    background-color: gray; 
+    border: 1px solid gray; 
+ }
+}
+.jump-start {
+  animation-name: jumpStart;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  margin-bottom: 4px;
+  animation-timing-function: steps(5, jump-start);
+}

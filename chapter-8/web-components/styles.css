@@ -1,0 +1,32 @@
+html, body {
+  background: #fafafa;
+  padding: 36px;
+  margin: 0;
+}
+
+section.components {
+  display: flex;
+  margin: 0 -1rem;
+}
+
+my-card { margin: 1rem; }
+
+.actions { text-align: center; }
+
+button {
+  font-family: sans-serif;
+  background: rgb(187, 255, 120);
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 1px 1px gray;
+  margin-top: 2rem;
+  padding: .5rem 3rem;
+}
+
+.dark {
+  font-family: monospace;
+  font-size: 1.0625rem;
+}
+
+p, h2 { font-variant: small-caps; }
+

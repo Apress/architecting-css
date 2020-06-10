@@ -1,0 +1,20 @@
+html, body {
+  padding: 36px;
+  margin: 0;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.rotate { animation: rotate ease-in-out 500ms 1; }
+
+.image { text-align: center; }
+img { max-width: 100%; }
+button {
+  display: block;
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 25%;
+}
+

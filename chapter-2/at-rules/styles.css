@@ -1,0 +1,13 @@
+p {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+
+@supports not (text-underline-offset: 1rem) {
+  p {
+    text-decoration: none;
+    padding-bottom: 1rem;
+    border-bottom: solid 3px orange;
+    display: inline-block;
+  }
+}

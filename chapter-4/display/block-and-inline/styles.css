@@ -1,0 +1,11 @@
+html, body {
+  font-size: 24px;
+  padding: 36px;
+  margin: 0;
+}
+
+div {
+  background: rgba(0, 0, 0, .16);
+  height: 50px;
+  width: 200px;
+}

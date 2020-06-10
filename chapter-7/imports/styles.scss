@@ -1,0 +1,33 @@
+
+@mixin message($color) {
+  background: lighten($color, 40%);
+  border: solid 1px $color;
+}
+
+body {
+  padding: 2rem;
+}
+
+.message {
+  padding: 1rem;
+}
+
+.info-message {
+  @include message(blue);
+  @extend .message;
+}
+
+.success-message {
+  @include message(green);
+  @extend .message
+}
+
+.warning-message {
+  @include message(orange);
+  @extend .message
+}
+
+.error-message {
+  @include message(red);
+  @extend .message
+}

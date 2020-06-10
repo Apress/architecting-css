@@ -1,0 +1,52 @@
+@mixin card($elevation) {
+  background: white;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  padding: 1rem;
+    
+  @if $elevation == 0 {
+    border: solid 1px silver;
+  } @else {
+    $offset: $elevation * 1;
+    $blur: $elevation * 2;
+    box-shadow: #{$offset}px #{$offset}px #{$blur}px silver;
+  }
+}
+
+@mixin message($color) {
+  background: lighten($color, 40%);
+  border: solid 1px $color;
+}
+
+
+body {
+  padding: 2rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+header {
+  @include card(0)
+}
+
+div {
+  @include card(2);
+}
+
+.message {
+  padding: 1rem;
+}
+.info {
+  @include message(blue);
+}
+.success {
+  @include message(green);
+}
+.warning {
+  @include message(orange);
+}
+.error {
+  @include message(red);
+}

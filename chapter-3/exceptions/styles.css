@@ -1,0 +1,23 @@
+body {
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+p { 
+  padding: 20px;
+  border: dashed 1px gray;
+}
+p::first-letter {
+  display: block;
+  float: left;
+  font-size: 3rem;
+  color: red;
+}
+p:nth-of-type(2) { padding: unset }
+p:nth-of-type(3) { padding: initial }
+p:nth-of-type(4) { padding: inherit }
+
+li { font-family: cursive; }
+li:nth-of-type(2) { font-family: unset; }
+li:nth-of-type(3) { font-family: initial; }
+li:nth-of-type(4) { font-family: inherit; }

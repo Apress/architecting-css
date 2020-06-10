@@ -1,0 +1,26 @@
+.shape {
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  display: inline-block;
+  position: relative;
+  height: calc(100vw / 3);
+  width: calc(100vw / 3);
+}
+.shape:nth-of-type(1) {
+  background: rgba(255, 0, 255, 0.31);
+  transform: rotate(-25deg);
+  filter: saturate(15%);
+}
+.shape:nth-of-type(2) {
+  background: rgb(255,116,0);
+  background: linear-gradient(90deg, rgba(255,116,0,1) 0%, rgba(255,237,0,1) 47%, rgba(255,167,0,1) 100%);
+  filter: opacity(.75);
+  transform: translate(0, -50px);
+  left: calc((100vw / 3) - 200px);
+}
+.shape:nth-of-type(3) {
+  background: hsl(189, 100%, 50%);
+  transform: rotate(25deg);
+  opacity: .33;
+  left: calc((100vw / 3) - 100px);
+  top: -200px;
+}
