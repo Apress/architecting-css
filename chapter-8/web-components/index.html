@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Web Components</title>
+  <link rel="stylesheet" href="./styles.css">
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <h1>Components</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed neque semper ante mattis tempor. Morbi volutpat ex ante, eget vulputate ligula pulvinar gravida.</p>
+  <p></p>
+  <section class="components">
+    <my-card title="Coffee">
+      <slot name="content">
+        <p>Aged cortado, carajillo saucer wings aftertaste robusta americano plunger pot. Aromatic eu, skinny affogato saucer cinnamon barista robusta. Siphon, et redeye variety percolator sweet plunger pot. Macchiato, french press filter coffee beans wings redeye saucer id cinnamon.</p>
+      </slot>
+    </my-card>
+
+    <my-card title="Cats" class="dark">
+      <slot name="content">
+        <p>Chew master's slippers i is not fat, i is fluffy but i can haz yet eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap.</p>
+      </slot>
+    </my-card>
+  </section>
+  <div class="actions">
+    <button type="button">More Components -></button>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
